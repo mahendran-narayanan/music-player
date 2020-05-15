@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Music</title>
+	
+	<style>
+		html,body{
+			height: 100%;
+		}
+		.chord{
+			height: 13%;
+			background-color: #fafafa;
+			border-bottom: 1px solid;
+		}
+		.header{
+			font-size: 30px;
+			background-color: #00d5ff;
+			text-align: center;
+		}
+	</style>
+	<script type="text/javascript" src="sound.js"></script>
+</head>
+<body>
+	<div class="header">
+		Musical Keyboard on hover
+	</div>
+	<div class="chord a" onmouseover="sounda()">
+		A
+	</div>
+	<div class="chord b" onmouseover="soundb()">
+		B
+	</div>
+	<div class="chord c" onmouseover="soundc()">
+		C
+	</div>
+	<div class="chord d" onmouseover="soundd()">
+		D
+	</div>
+	<div class="chord e" onmouseover="sounde()">
+		E
+	</div>
+	<div class="chord f" onmouseover="soundf()">
+		F
+	</div>
+	<div class="chord g" onmouseover="soundg()">
+		G
+	</div>
+<script type="text/javascript">
+	function sounda(){
+		var audioa = new Audio('music/a.wav');
+		audioa.play();
+	}
+	function soundb(){
+		var audiob = new Audio('music/b.wav');
+		audiob.play();
+	}function soundc(){
+		var audioc = new Audio('music/c.wav');
+		audioc.play();
+	}function soundd(){
+		var audiod = new Audio('music/d.wav');
+		audiod.play();
+	}function sounde(){
+		var audioe = new Audio('music/e.wav');
+		audioe.play();
+	}function soundf(){
+		var audiof = new Audio('music/f.wav');
+		audiof.play();
+	}function soundg(){
+		var audiog = new Audio('music/g.wav');
+		audiog.play();
+	}
+</script>
+</body>
+</html>
